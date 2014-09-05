@@ -675,6 +675,9 @@ float: left;
 	background-position: top; }
 .text-opiniones2 h4{padding-bottom: 307px;}
 .div-titulo-arriba{width:60%;	}
+.links-nav{
+		visibility: visible;
+	}
 }
 
 
@@ -721,7 +724,9 @@ nav{background-color: black; height: 60px;	padding-top: 20px;}
 .text-icon-rojo p{font-family: "Raleway"; font-size:16px;	margin-top: 47px;	padding-bottom: 86px;}
 
 .nav-collapse li{ padding-left: 90px!important;}
-
+.links-nav{
+		visibility: visible;
+	}
 }
 
 
@@ -733,7 +738,9 @@ nav{background-color: black; height: 60px;	padding-top: 20px;}
 	.imagen-primera{ height: 100%!important; background: url("../imagenes/fotoinicio767px.jpg") no-repeat center center; 
 	background-position: top; }
 .titulo-antiterrorista h1{font-size: 50px; font text-align: center; }
-
+.links-nav{
+		visibility: visible;
+	}
 }
 
 
@@ -745,6 +752,9 @@ nav{background-color: black; height: 60px;	padding-top: 20px;}
 	.imagen-primera{ height:256px; background: url("../imagenes/fotoinicio480px.jpg") no-repeat center center; 
 	background-position: top;}
 .titulo-antiterrorista h1{font-size:35px; text-align: center; }
+.links-nav{
+		visibility: hidden;
+	}
 }
 
 
@@ -758,11 +768,7 @@ nav{background-color: black; height: 60px;	padding-top: 20px;}
 	.titulo-ley h2{font-size: 15px!important;	margin-top: 95px; padding-bottom: 0px!important;}
 	.titulo-antiterrorista h1{font-size:30px; text-align: center; padding-bottom: 0px!important;}
 	
-	/*.fondo-para-movil{
-		padding-top: 0px;
-		background-color: #000000;
-	}*/
-	
+
 	.definicion p{	
 		font-family: "Arvo";	
 		font-size:15px!important; 
