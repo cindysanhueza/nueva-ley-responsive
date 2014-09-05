@@ -738,9 +738,9 @@ nav{background-color: black; height: 60px;	padding-top: 20px;}
 	.imagen-primera{ height: 100%!important; background: url("../imagenes/fotoinicio767px.jpg") no-repeat center center; 
 	background-position: top; }
 .titulo-antiterrorista h1{font-size: 50px; font text-align: center; }
-.links-nav{
-		visibility: visible;
+.links-nav{	visibility: visible; padding-left: 5px;
 	}
+
 }
 
 
