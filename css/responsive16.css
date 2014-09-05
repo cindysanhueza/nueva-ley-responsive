@@ -572,98 +572,10 @@ float: left;
 
 .area-footer{
 	background-color: #000000!important;
-	height: 252px;
-}
-
-.footer ul{
-	padding-top: 37px;
-	padding-left: 80px;
-}
-
-.footer ul li{
-	font-family: "Raleway";
-	font-size:20px;
-	text-align:left !important;
-	color: #fff;
-	font-weight: 400!important;
-	text-decoration: none;
-	list-style: none;
-	padding-top: 8px;	
-}
-
-.footer ul li:hover{
-	font-weight: 700!important;
-	display: block;
-}
-
-
-.footer-descarga li{
-	font-family: "Raleway";
-	font-size:20px;
-	text-align:center!important;
-	color: #fff;
-	font-weight: 700!important;
-	list-style: none;
-	border: 1px solid #fff;
-    padding: 21px 30px;
-    width: 280px;
-    border-radius: 15px;
-    margin-top: 37px;
-    margin-left:35px;
-}
-
-.footer-descarga p{
-	font-family: "Raleway";
-	font-size:20px;
-	text-align:right!important;
-	color: #fff;
-	font-weight: 400!important;
-	list-style: none;
-	padding-top: 17px;
-}
-
-.footer-descarga li:hover{
-	font-weight: 400!important;
-	display: block;
-}
-
-.footer-contacto{
-	padding-top: 37px;
-}
-
-.footer-contacto ul{
-	padding-left: 120px;
-}
-
-.footer-contacto li{
-	font-family: "Arvo";
-	font-size:20px;
-	text-align:left !important;
-	color: #fff;
-	font-weight: 400!important;
-	text-decoration: none;
-	list-style: none;
-	padding-top: 8px;
 
 }
 
-.footer-contacto li span{
-	font-family: "Raleway";
-	font-size:20px;
-	text-align:left !important;
-	color: #fff;
-	font-weight: 400!important;
-	text-decoration: none;
-	list-style: none;
-	padding-top: 8px;
-	padding-right: 0px;
-}
 
-
-.linea-footer{
-	background-color: #fff;
-	height: 2px;
-}
 
 .referencias p{
 	font-family: "Arvo";
