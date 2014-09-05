@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/* ------------------------------------------
+  RESET
+--------------------------------------------- */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+/* ------------------------------------------
+  BASE DEMO STYLES
+
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #37302a;
+  background: #fff;
+  font: normal 100%/1.4 sans-serif;
+}
+
+section {
+  border-bottom: 1px solid #999;
+  float: left;
+  width: 100%;
+  height: 800px;
+}
+
+
+  NAVIGATION STYLES
+  (+ responsive-nav.css file is loaded in the <head>)
+--------------------------------------------- */
+header{position: fixed;
+z-index: 5;
+float: right;
+
+}
+
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+ul{
+  display: block;
+  width:0 auto !important;
+}
+
+.nav-collapse,
+.nav-collapse * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%!important;
+  float: left;
+
+}
+
+.nav-collapse li {
+  float: left;
+  width: 100%!important;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    width: 100%;
+    *width: 100%; /* IE7 Hack */
+    _width: 19%; /* IE6 Hack */
+  }
+}
+
+.nav-collapse a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  background: #000000;
+  border-bottom: 1px solid white;
+  padding: 0.7em 1em;
+  float: left;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse a {
+    margin: 0;
+    padding: 1em;
+    float: left;
+    text-align: center;
+    border-bottom: 0;
+    border-right: 1px solid white;
+  }
+}
+
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em;
+}
+
+@media (min-width: 768px) and (max-width: 991px)  {
+  .nav-collapse a {
+    margin: 0;
+    padding: 1em;
+    float: left;
+    text-align: center;
+    border-bottom: 0;
+    border-right: 1px solid white;
+  }
+
+
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-collapse ul ul a {
+    display: none;
+  }
+}
+
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+
+/*@font-face {
+  font-family: "Raleway";
+  src:url("../imagenes/responsivenav.eot");
+  src:url("../imagenes/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../imagenes/responsivenav.ttf") format("truetype"),
+    url("../imagenes/responsivenav.woff") format("woff"),
+    url("../imagenes/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: left!important;
+}
+
+.nav-toggle:before {
+  color: #fff; /* Edit this to change the icon color */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 28px;
+  text-transform: none;
+  position: absolute;
+  content:url(../imagenes/list23.svg);
+  text-indent: 0;
+  text-align: center;
+  line-height: 55px;
+  speak: none;
+  width: 100%!important;
+  top: 0;
+  left: 0;
+}
+
+.nav-toggle.active::before {
+  font-size: 24px;
+ /* content:"x";*/
+ content:url(../imagenes/cancel4.svg);
+}
+
+@media (min-width: 1200px) {
+  .nav-collapse ul li{display: none; z-index: 1;}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.nav-collapse ul li{display: none; z-index: 1;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.nav-collapse ul li{display: none; z-index: 1;}
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+.nav-collapse ul li{display: none; z-index: 1;}
+  }
+
+@media (max-width: 639px) {
+.nav-collapse ul li{display: block;}
+  }
