@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	 	<title>Ley Antiterrorista</title>
+	 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/responsive16.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+	 	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<!-- menú advanced -->
+		<link rel="stylesheet" href="css/responsive-nav.css">
+    	<link rel="stylesheet" href="css/stylesmenu.css">
+    	<script src="js/responsive-nav.js"></script>
+    	<!-- fin menú -->
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+		<script>
+		$(function() {
+
+			// grab the initial top offset of the navigation 
+			var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+			
+			// our function that decides weather the navigation bar should have "fixed" css position or not.
+			var sticky_navigation = function(){
+				var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+				
+				// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+				if (scroll_top > sticky_navigation_offset_top) { 
+					$('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+				} else {
+					$('#sticky_navigation').css({ 'position': 'relative' }); 
+				}   
+			};
+			
+			// run our function on load
+			sticky_navigation();
+			
+			// and run it again every time you scroll
+			$(window).scroll(function() {
+				 sticky_navigation();
+			});
+			
+			// NOT required:
+			// for this demo disable all links that point to "#"
+			$('a[href="#"]').click(function(event){ 
+				event.preventDefault(); 
+			});
+			
+		});
+		</script>
+
+	</head>
+
+
+	<body>
+
+		<header>
+		    <nav class="nav-collapse">
+		        <ul>
+		            <li><a href="#historia" >HISTORIA</a></li>
+		            <li><a href="#conflicto">CONFLICTO</a></li>
+		            <li><a href="#opinion">OPINIÓN</a></li>
+		            <li><a href="#actualidad">ACTUALIDAD</a></li>
+		          </ul>
+		    </nav>
+		</header>
+
+
+
+		<div class ="imagen-primera"><!--Imagen inicial-->	
+			
+			<div class="container">
+				<div class="row">
+					<div class=" titulo-ley "><h2>LEY</h2></div>
+					<div class="col-sm-13 col-sm-offset-4 col-md-11 col-md-offset-3 col-lg-11 col-lg-offset-4 div-titulo-arriba"></div>
+					<div class="titulo-antiterrorista"><h1>ANTITERRORISTA</h1></div>
+					<div class="col-sm-14 col-sm-offset-2 col-md-12 col-md-offset-3 col-lg-12 col-lg-offset-4 div-titulo-abajo"></div>
+					<div class="col-sm-12 col-sm-offset-2 col-md-10 col-md-offset-3 col-lg-10 col-lg-offset-3 definicion"><p>La ley <span>18.314</span> o ley Antiterrorista fue promulgada el 16 de mayo de 1984 vigente la constitución de 1980, periodo de dictadura militar. Década caracterizada principalmente por el aumento de protestas, las cuales, fueron duramente criminalizadas causando la promulgación de esta ley, con la finalidad de castigar de una forma más rápida y severa dichos actos.</p></div>
+				</div>
+			</div>
+		
+		</div><!--Fin Imagen inicial-->
+		
+		
+				<div id="sticky_navigation_wrapper">
+					<div id="sticky_navigation">
+						<div class="row">					
+							<div class="col-sm-16 col-lg-16 links-nav ">
+
+								<ul>
+									<li><a href="#historia">HISTORIA</a></li>
+									<li><a href="#conflicto">CONFLICTO</a></li>
+									<li><a href="#opinion">OPINIÓN</a></li>
+									<li><a href="#actualidad">ACTUALIDAD</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+
+		<a name="historia"><div id="color-rojo"></a>   <!--Div exterior para el color-->
+			<div class="container"> <!--Contenedor (Hace que todo en el interior quede centrado)-->
+				
+			<h2 class="historia"><span>HISTORIA </span></h2>
+				<div class="row">  <!--Fila contiene imagen y texto-->
+					<div class="col-sm-5 col-sm-offset-1 col-md-offset-2 col-lg-5 col-lg-offset-2 historia-1984"><img src="imagenes/dictadura.png"></div>
+					
+					<div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1 historia-1984"><h3>1984</h3><p>Se promulga la ley que convierte cualquier acto revolucionario en una conducta terrorista, sin una investigación previa a la acusación. Se castiga severa y prematuramente, incluyendo privación de libertad y encarcelamiento durante las investigaciones.</p></div>
+				</div>  <!--Fin Fila-->
+					
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2 historia-2001"><img src="imagenes/conflictomapuche.png"></div>
+					<div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1 historia-2001"><h3>2001</h3><p>Se comienza aplicar la ley en contra de comuneros mapuche que protestan por sus tierras ancestrales al sur de Chile, criminalizando su derecho a protesta y castigando de manera injustificada dichas acciones.</p></div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2 historia-2010"><img src="imagenes/casobombas.png"></div>
+					<div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1 historia-2010"><h3>2010</h3><p>En las investigaciones del llamado “Caso Bombas” se realizó el allanamiento de la casa okupa “Saccoy Vanzetti” y la detención de 14 personas acusadas de terrorismo. Después de 8 meses de prisión, y varios meses de libertad condicional, todos los imputados fueron declarados inocentes tras un largo juicio que culminó en la Corte Suprema chilena.</p></div>
+				</div>
+			</div> <!--Fin Contenedor-->
+		</div>	<!--Fin Div exterior-->
+
+		
+
+
+
+<!-- 
+		<div id="color-negro">  Div exterior para el color
+			<div class="container">
+
+				<div class="row">
+					<div class="conducta"><h2>CONDUCTA TERRORISTA</h2></div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2 icon-gris"><img src="imagenes/i_miedo.svg"><p>Producir en la población el temor justificado de ser víctima</p></div>
+					<div class="col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2 icon-gris"><img src="imagenes/i_fuerza.svg"><p>Delinquir imponiendo exigencias para arrancar resoluciones de la autoridad</p></div>
+				</div>
+
+				<div class="row">  !--linea 1 iconos rojos--
+					<div class="col-md-4  col-lg-4 iconos"> <!--linea icono1--
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-2 col-md-12 col-md-offset-2 col-lg-12 col-lg-offset-2 icon-rojo">
+								<img src="imagenes/i_explosivo.svg" class="img-responsive" alt="Responsive image"></div>				
+						</div>
+						<div class="col-sm-6 col-sm-offset-1 col-md-16 col-md-offset-1 col-lg-16 col-lg-offset-1 text-icon-rojo"><p>Producir temor a través del uso de artefactos explosivos, incendiarios o tóxicos</p></div>
+					</div>
+
+					<div class="col-md-4  col-md-offset-2 col-lg-4 col-lg-offset-2 iconos">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-2 col-md-12 col-md-offset-3 col-lg-12 col-lg-offset-2 icon-rojo"><img src="imagenes/i_autoridad.svg" class="img-responsive" alt="Responsive image"></div>
+						</div>	
+						<div class="col-sm-6 col-sm-offset-1 col-md-16 col-lg-16 col-lg-offset-1 text-icon-rojo"><p>Atentar contra la vida del jefe de estado o cualquier otra autoridad.</p></div>
+					</div>
+
+					<div class="col-md-4  col-md-offset-2 col-lg-4 col-lg-offset-2 iconos">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-2 col-md-12 col-md-offset-3 col-lg-12 col-lg-offset-2 icon-rojo"><img src="imagenes/i_transporte.svg" class="img-responsive" alt="Responsive image">></div> 
+						</div>	
+						<div class="col-sm-6 col-sm-offset-1 col-md-16 col-lg-16 col-lg-offset-1 text-icon-rojo"><p>Apoderarse o atentar contra un transporte público en servicio.</p></div>
+					</div>
+				</div> <!--Fin linea 1 iconos rojos--
+
+				
+				<div class="row">  <!--linea 2 iconos rojos--
+					<div class="col-md-4  col-lg-4 iconos-2"> <!--linea icono1--
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-2 col-md-12 col-md-offset-2 col-lg-12 col-lg-offset-2 icon-rojo"><img src="imagenes/i_bomba.svg"></div>				
+						</div>
+					</div>
+
+					<div class="col-md-4  col-md-offset-2 col-lg-4 col-lg-offset-2 iconos-2">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-2 col-md-12 col-md-offset-2 col-lg-12 col-lg-offset-2 icon-rojo"><img src="imagenes/i_secuestro.svg"></div>
+							<!-- <div class="col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 diez"><img src="imagenes/i_transporte.svg"></div> --
+						</div>	
+					</div>
+
+					<div class="col-md-4  col-md-offset-2 col-lg-4 col-lg-offset-2 iconos-2">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-2 col-md-12 col-md-offset-2 col-lg-12 col-lg-offset-2 icon-rojo"><img src="imagenes/i_asociación.svg"></div> 
+						</div>	
+					</div>
+				</div> <!--Fin linea 2 iconos rojos--
+			
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-1 text-icon-rojo"><p>Colocar, lanzar o disparar artefactos explosivos o incendiarios</p></div>
+					<div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 text-icon-rojo"><p>Secuestrar, en forma de encierro o detención, a una persona como rehén</p></div>
+					<div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 text-icon-rojo"><p>La asociación ilícita que tenga como objeto la comisión de delitos terroristas</p></div>
+				</div>
+
+			</div> !--Fin Container--
+		</div> !--Fin color negro fondo--
+
+		-->
+
+
+
+<div class="conducta">
+			<div class="titulosh2"><h2><a name="conducta">CONDUCTA TERRORISTA</a></h2></div>
+				<div class="container">
+						<div class="row">
+							<div class="col-md-5 col-md-offset-2">
+								<img src="imagenes/i_miedo.svg">
+								<p>Producir en la población el temor justificado de ser víctima.</p>
+							</div>
+							<div class="col-md-5 col-md-offset-2">
+								<img src="imagenes/i_fuerza.svg">
+								<p>Delinquir imponiendo exigencias para arrancar resoluciones de la autoridad.</p>
+							</div>
+						</div>
+					<div class="row">
+						<div class="col-md-4">
+							<img src="imagenes/i_explosivo.svg" class="iconp">
+							<p class="iconp">Producir temor a través del uso de artefactos explosivos, incendiarios o tóxicos.</p>
+						</div>
+						<div class="col-md-4 col-md-offset-2">
+							<img src="imagenes/i_autoridad.svg" class="iconp">
+							<p class="iconp">Atentar contra la vida del jefe de estado o cualquier otra autoridad.</p>
+						</div>
+						<div class="col-md-4 col-md-offset-2">
+							<img src="imagenes/i_transporte.svg" class="iconp">
+							<p class="iconp">Apoderarse o atentar contra un transporte público en servicio.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<img src="imagenes/i_bomba.svg" class="iconp">
+							<p class="iconp">Colocar, lanzar o disparar artefactos explosivos o incendiarios.</p>
+						</div>
+					<div class="col-md-4 col-md-offset-2">
+						<img src="imagenes/i_secuestro.svg" class="iconp">
+						<p class="iconp">Secuestrar, en forma de encierro o detención, a una persona como rehén.</p>
+					</div>
+					<div class="col-md-4 col-md-offset-2">
+						<img src="imagenes/i_asociación.svg" class="iconp">
+						<p class="iconp">La asociación ilícita que tenga como objeto la comisión de delitos terroristas.</p>
+					</div>
+					</div>
+				</div>	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="conflicto"><div id="conflicto-verde0"></div></a> <!--Espacio verde pequeño-->
+<div id="conflicto-rojo0"> </div> <!--Espacio rojo pequeño-->
+
+<div class="linea-negra">
+
+	<div class="row">
+		<div class="conflicto"><h2>CONFLICTO</h2></div>
+	</div>
+
+</div><!--Linea negra sobre fondo de mitades-->
+
+<div id="mitad-verde">
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-md-5 col-md-offset-3 col-lg-5 col-lg-offset-3 img-afavor"><img src="imagenes/sileyantiterrorista.png"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-11 col-md-offset-2 col-lg-11 col-lg-offset-2 historia-2010"><h3>A favor</h3><p>Garantiza que en la sociedad haya un ambiente de paz y orden, frente a personas que se imponen a esto, quienes ya no reciben el nombre de “personas” si no de <span>terroristas</span>, pasan a estar fuera de la sociedad. Por lo tanto no pueden tener los mismos derechos que un ciudadano. Es por esto que es justificada la medida represiva que impone esta ley.</p></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 img2-afavor"><img src="imagenes/jovinonovoa.png"></div>
+			<div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 comillas2"><img src="imagenes/comillas.svg"></div>
+			<div class="col-md-6 col-lg-6 img2-afavor"><p>No se puede permitir que grupos minoritarios quieran terminar con el Estado chileno o quieran hacer valer sus derechos en forma violenta</p><h4>Jovino Novoa</h4></div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 text-opinion2"><img src="imagenes/rodrigopeñalillo.png"></div>
+			<div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 comillas2"><img src="imagenes/comillas.svg"></div>
+			<div class="col-md-6 col-lg-6 text-opiniones2"><p>No vamos a permitir que ningún grupo o persona se sienta con la libertad de instalar bombas. Vamos a seguir con esto hasta el final</p><h4>Rodrigo Peñalillo</h4></div>
+
+		</div>
+
+	</div> <!--Fin Container-->
+</div>
+
+<div id="mitad-rojo">
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-md-5 col-md-offset-4 col-lg-5 col-lg-offset-4 img-afavor"><img src="imagenes/noleyantiterrorista.png"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-11 col-md-offset-2 col-lg-11 col-lg-offset-2 historia-2010"><h3>En  contra</h3><p>Es una de las leyes más severas de Chile. Aumenta las condenas aplicables, dificulta la libertad provisional del imputado siendo castigado anticipadamente violando el principio de inocencia. Algunas disposiciones violan garantías procesales fundamentales protegidas por tratados internacionales, ya que le otorga numerosos beneficios al fiscal en materia de prueba e investigación.</p></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 text-img-opinion"><img src="imagenes/joseaylwin.png"></div>
+			<div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 comillas2"><img src="imagenes/comillas.svg"></div>
+			<div class="col-md-6 col-lg-6 text-img-opinion"><p>No hay ningún argumento sólido que permita justificar la utilización de esta legislación especial para acciones de protesta social (...) si se constituyen delitos, hay legislación ordinaria que permite su sanción</p><h4>José Aylwin</h4></div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 text-opinion2"><img src="imagenes/hugogutierrez.png"></div>
+			<div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 comillas2"><img src="imagenes/comillas.svg"></div>
+			<div class="col-md-6 col-lg-6 text-opinion2"><p>Un poquito cansados de que se manosee permanentemente una legislación que nació en dictadura y no respeta los derechos esenciales de las personas</p><h4>Hugo Gutierrez</h4></div>
+
+		</div>
+	</div>
+
+</div>
+<div class="clearfix"></div>
+
+
+<a name="opinion"><div id="area-negra"></a>
+	<div class="container">
+		<div class="row">
+			<div class="titulo-opinion"><h2>OPINIÓN</h2></div>
+			 <div class="col-xs-12  col-sm-12 col-md-12 col-md-offset-2 col-lg-12 col-lg-offset-2 texto-seccion-opinion"><p>En el sitio Plaza Pública se realizó la pregunta acerca de la invocación de la ley antiterrorista o la ley común en dos hechos ocurridos recientemente en Chile. El primero, ocurrido en Santiago, donde un desconocido dejó un artefacto explosivo en la estación “Los Dominicos” del metro de esta ciudad. Y la segunda instancia se relaciona con los atentados incendiarios, atribuidos a comuneros mapuches, ocurridos en la región de La Araucanía.</p></div>		
+		</div>
+
+		<div class="row">
+			<div class="col-xs-7  col-sm-7 col-md-7 col-lg-7  texto-graficos">
+				<img src="imagenes/grafico04.png" class="img-responsive" alt="Responsive image">
+				<h3>Bomba en el metro</h3>
+				<p>¿Cree usted que la persona que colocó la bomba en la estación Los Domínicos en el metro de Santiago debería ser juzgada por la ley común o por la ley antiterrorista?</p></div>
+		
+			<div class="col-xs-7  col-sm-7 col-md-7 col-md-offset-2 col-lg-7 col-lg-offset-2 texto-graficos">
+				<img src="imagenes/grafico03.png" class="img-responsive" alt="Responsive image">
+				<h3>Actos incendiarios</h3>
+				<p>¿Usted cree que se debe aplicar la ley común o la ley antiterrorista a los grupos involucrados en hechos delictuales o atentados incendiarios en La Araucanía?</p></div>
+		
+			<div class="col-xs-16  col-sm-16 col-md-16 col-lg-4  texto-muestras">
+			<img src="imagenes/muestraroja.png" class="img-responsive" alt="Responsive image"><p>Es un delito terroista</p></div>
+			<div class="col-xs-16  col-sm-16 col-md-16 col-lg-6 col-lg-offset-1  texto-muestras">
+			<img src="imagenes/muestraverde.png" class="img-responsive" alt="Responsive image"><p>Es un delito grave pero común</p></div>
+			<div class="col-xs-16  col-sm-16 col-md-16 col-lg-5 col-lg-offset-1  texto-muestras">
+			<img src="imagenes/muestraazul.png" class="img-responsive" alt="Responsive image"><p>No sabe / No contesta</p></div>
+		</div>
+	</div>
+
+
+
+<a name="actualidad"><div id="area-roja-actualidad"></a>
+	
+		<div class="row">
+			<div class="titulo-actualidad"><h2>ACTUALIDAD</h2></div>
+
+			<div class="col-xs-12  col-sm-12 col-md-12 col-md-offset-2 col-lg-12 col-lg-offset-2 texto-seccion-actualidad">
+				<p><span>“El Estado debe reformar la Ley Antiterrorista y adoptar una definición clara y precisa de los delitos de terrorismo...”.</span> Esta rotunda frase forma parte de  las conclusiones del Comité de Derechos Humanos de Naciones Unidas (ONU), tras el sexto informe periódico que Chile le entregó a esa instancia.</p>
+				<p>El mencionado comité está compuesto por 18 expertos internacionales. Se trata del órgano de la ONU encargado de supervisar la implementación del Pacto Internacional de Derechos Civiles y Políticos, uno de los tratados más emblemáticos sobre DD.HH. Y Chile, como uno de los 168 países que lo firmaron, debe presentar informes regulares sobre este tema.</p>
+				<p>Según el documento, Chile debe  <span>“asegurar que las actividades que realizan los agentes del orden, en la lucha contra el terrorismo, no estén dirigidas a determinadas personas por su origen étnico o cualquier motivo social o cultural”.</span></p>
+				<p>Y agrega que el Estado <span>“debe asegurar que las garantías procesales sean respetadas. El Comité insta a abstenerse de aplicar la Ley Antiterrorista en contra de mapuches”.</span></p>
+
+			</div>
+		</div>
+	
+</div>				
+
+
+<footer>
+	<div class="area-footer">
+        
+			<div class="row">
+				<div class="col-xs-16 col-sm-16 col-md-16 col-lg-16 referencias"><p>FUENTES</p></div>					
+					
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-3 referencias">
+						<li><a href=" http://www.leychile.cl/Navegar?idNorma=29731#top&r=1">Leychile</a></li></div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-3 col-lg-offset-2 referencias">
+						<li><a href="http://plazapublica.cl/?s=ley+antiterrorista">Plaza Pública</a></li></div>
+
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-2 referencias">
+						<li><a href="http://www.indh.cl/corteidh-condena-al-estado-de-chile-por-aplicacion-de-ley-antiterrorista-a-dirigentes-mapuche">INDH</a></li></div>
+					
+			</div>
+	</div>
+
+			
+
+	<a class="go-top" href="#"><img src="imagenes/arrow241.svg"></a>
+</footer>
+
+
+		<!-- script menu responsive -->
+
+		 <script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+    </script>
+
+    <!-- fin script menú responsive -->
+
+    <!-- JavaScript -->
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	  <script>
+	    $(document).ready(function() {
+      // Show or hide the sticky footer button
+	      $(window).scroll(function() {
+	        if ($(this).scrollTop() > 200) {
+          $('.go-top').fadeIn(200);
+	        } else {
+	          $('.go-top').fadeOut(200);
+	        }
+	      });
+	 
+	      // Animate the scroll to top
+	      $('.go-top').click(function(event) {
+	        event.preventDefault();
+ 
+	        $('html, body').animate({scrollTop: 0}, 300);
+	      })
+	    });
+	  </script>
+
+</body>
+</html>
