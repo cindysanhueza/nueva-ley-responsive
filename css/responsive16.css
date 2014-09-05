@@ -277,24 +277,7 @@
 
 
 .iconp {
-padding-top: 70px;
-font-size: 18px;
-}
-
-
-
-.icon-rojo{
-	background-color: ;
-	
-}
-
-.icon-rojo img{
-	width: 100%;
-
-}
-
-.iconos p{
-	font-family: "Raleway";
+font-family: "Raleway";
 	font-size:18px;
 	text-align: center;
 	color: #fff;
@@ -303,9 +286,11 @@ font-size: 18px;
 	padding-bottom: 86px;
 }
 
-.iconos-2{
-	height: 100%;
-	
+
+
+.iconp-rojo img{
+	width: 100%;
+
 }
 
 
